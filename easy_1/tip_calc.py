@@ -1,14 +1,3 @@
-# inputs: prompt user for bill total and tip % on seperate lines
-# inputs should get converted to floats
-# must divide tip by 100 to convert for calculation
-# add calculated tip to original bill
-# output: tip amount and total bill with tip on seperate lines
-# output should have an empty new line before output response.
-# format output to two decimals
-
-'''mental model: a restaurant guest should be able to enter the total of a bill
- and the percent they want to tip and get the tip and new total.''' 
-
 ''' example 1: What is the bill? 200
 What is the tip percentage? 20
 
