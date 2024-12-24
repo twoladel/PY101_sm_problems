@@ -1,7 +1,6 @@
 def utf16_value(str1):
-    chars = list(str1)
     value = 0
-    for char in chars:
+    for char in str1:
         value += ord(char)
     return value
 
