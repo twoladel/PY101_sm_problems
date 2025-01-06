@@ -31,17 +31,17 @@ def get_words():
 
         while not word.isalpha():
             prompt(f"Enter one word that is a {need}.")
-            word = input()  
+            word = input()
 
         words.append(word)
     return words
 
 def run_madlib():
     print()
-    prompt(f"Welcome to Madlibs!\nIf you've never played before it's easy.\n"
-           f"Simply enter a one word response for the type of word requested."
-           f"\nYou'll be asked to enter 6 words. "
-           f"Then you get to read the Madlib!")
+    prompt("Welcome to Madlibs!\nIf you've never played before it's easy.\n"
+           "Simply enter a one word response for the type of word requested."
+           "\nYou'll be asked to enter 6 words. "
+           "Then you get to read the Madlib!")
     print()
     submitted = get_words()
     os.system('clear')
