@@ -5,18 +5,22 @@ def clean_up(my_str):
             my_list.append(char)
         else:
             my_list.append(' ')
+    
+    return remove_spaces(my_list)
 
+def remove_spaces(lst):
     cleaned = []
-    if my_list[0].isspace():
+    if lst[0].isspace():
         cleaned.append(' ')
 
-    for i in range(len(my_list)):
-        if not my_list[i - 1].isspace() and my_list[i].isspace():
-            cleaned.append(my_list[i])
-        if my_list[i].isalpha():
-            cleaned.append(my_list[i])
+    for i in range(len(lst)):
+        if not lst[i - 1].isspace() and lst[i].isspace():
+            cleaned.append(lst[i])
+        if lst[i].isalpha():
+            cleaned.append(lst[i])
+            
     cleaned = ''.join(cleaned)
-    print(cleaned)
+
     return cleaned
 
 
